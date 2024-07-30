@@ -1,0 +1,32 @@
+h1{
+    color: navy;
+    margin: 0px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 750;
+}
+
+p{
+    color:black;
+    font-weight: 50;
+    font-family: "Open Sans", sans-serif;
+}
+
+h2{
+    margin: 0px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 650;
+    color: gray;
+}
+
+.imagem-jogo{
+    width: 50%;
+    margin: 0px;
+}
+
+a{
+    color:black;
+}
+
+a:visited {
+    color:lightslategray;
+}
