@@ -1,32 +1,174 @@
-h1{
-    color: navy;
-    margin: 0px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 750;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body{
+    font-family: "Quicksand"; 
+    /*fonte do menu, da lista e do rodapé*/
+    font-size: 20px;
+    /*tamanho do menu, da lista e do rodapé*/
+    background: linear-gradient(rgb(27, 1, 67),rgb(17, 1, 28));
+    /*cor do fundo*/
 }
 
-p{
-    color:black;
-    font-weight: 50;
-    font-family: "Open Sans", sans-serif;
+h1{
+    color:rgb(101, 61, 120); 
+    /*cor do título*/
+    margin: 60px; 
+    /*margem entre a o título e os outros elementos*/
+    font-family: "Quicksand"; 
+    /*fonte do título*/
+    font-size: 50px; 
+    /*tamanho da fonte do título*/
+    text-align: center; 
+    /*posição do título*/
 }
+
 
 h2{
-    margin: 0px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 650;
-    color: gray;
+    margin: 60px;
+    /*margem entre a o subtítulo e os outros elementos*/
+    font-family: "Quicksand"; 
+    /*fonte do subtitulo*/
+    font-size: 40px;
+    /*tamanho da fonte do subtitulo*/
+    color:rgb(163, 139, 182);
+    /*cor do subtitulo*/
 }
 
-.imagem-jogo{
-    width: 50%;
-    margin: 0px;
+
+p{
+    color:black; 
+    /*cor das letras dos textos*/
+    font-size: 30px;
+    /*tamanho da fonte das letras do texto*/
+    font-family: "Nunito, "sans-serif;
+    /*fonte das palavras do texto*/
+    line-height: 1.6; 
+    /*espaçamento das frases no texto*/
+    text-align: center;
+    /*posição do texto*/
 }
 
-a{
-    color:black;
+.texto{
+    width: 800px;
+    /*mexe nos paragrafos*/
+    text-align: justify;
+    /*paragrafos justificados*/
+ }
+
+header{
+    display: flex;
+    /*para deixar os itens lado a lado*/
+    gap: 50px;
+    /*espaçamento dos itens do menu*/
+ }
+
+a:link{
+    color:rgb(177, 168, 198);
+    /*cor do menu e da lista*/
 }
 
 a:visited {
-    color:lightslategray;
+    color:rgb(27, 0, 89);
+    /*cor do menu e da lista depois d visitado*/
+}
+
+.conteudo-padrao{
+    border:7px solid rgb(255, 255, 255);
+    /*borda do retangulos*/
+    background-color: snow;
+    /*cor dos retangulos*/
+    padding: 25px;
+    /*tamanho dos retangulos*/
+    margin: 40px auto;
+    /*espaçamento entre um retangulo e outro*/
+    border-radius: 25px;
+    /*pontas arredondadas*/
+    color: rgb(40, 0, 60);
+    /*cor das bordas brilhantes*/
+    box-shadow: -4px -4px 15px, -4px -4px 15px lightgrey;
+    /*direção das bordas e brilho das bordas*/
+    text-align: center;
+    /*texto no centro*/
+    max-width: 1000px; 
+    /*largura dos retangulos*/
+ }
+
+ .flex{
+    display: flex;
+    /*deixa a lista lado a lado*/
+    gap: 100px;
+    /*espaçamento entre as frases*/
+    justify-content: center;
+    /*centralizando*/
+    margin-top: 50px;
+    /*margem de cima*/
+ }
+
+.img{
+    display: flex;
+    /*para deixar as imagens lado a lado*/
+    gap: 50px;
+    /*espaçamento estre as imagens*/
+    justify-content: center;
+    /*deixar as imagens no centro*/
+ }
+
+.imagem-jogo{
+    border-radius: 15px;
+    /*borda arredondadas da imagem dos jogos*/
+    width: 350px;
+    /*tamanho das imagens*/
+ }
+
+.img-logo{
+    width: 120px;
+    /*tamanho das logos*/
+    border-radius: 100px;
+    /*borda arredondadas da imagem dos jogos*/
+    margin: 50px;
+    /*tamanho do espaçamento de cima das logos*/
+    cursor: pointer;
+    /*muda o cursor para mãozinha*/
+}
+
+footer{
+    display: flex;
+    /*deixa o rodapé lado a lado*/
+    gap: 200px;
+    /*espaçamento dos topicos*/
+    justify-content: center;
+    /*centralizado*/
+    color: rgb(40, 0, 60);
+    /*cor das bordas brilhantes*/
+    box-shadow: -4px -4px 15px, -4px -4px 15px lightgrey;
+    /*direção das bordas e brilho das bordas*/
+    cursor: pointer;
+    /*muda o cursor para mãozinha*/
+}
+
+footer .last-detail /* Alinha o conteúdo da última gaveta à direita */ {
+  text-align: left; /* Alinha o texto à direita */
+}
+
+footer .last-detail a /* Estilo para os links dentro da gaveta */ {
+  display: block; /* Faz com que os links fiquem em blocos separados */
+}
+
+#sobre-mim{
+    display: flex;
+    /*imagem e texto lado a lado*/
+    gap: 50px;
+    /*espaçamentoentre a imagem e o texto*/
+}
+
+#fundo{
+    height: 10000px;
+    /*fundo da Camila.pag, tinha ficado com várias imagens de fundo, com isso deixou ele em um imagem só*/
+    background: linear-gradient(rgb(27, 1, 67),rgb(17, 1, 28));
+    /*cor do fundo*/
+}
+
+#texto-2{
+    text-align: left;
+    /*deixar o texto para a esquerda*/
 }
