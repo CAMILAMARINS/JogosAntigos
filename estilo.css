@@ -11,11 +11,13 @@ body{
 
 .menu-conteiner {
     display: flex;
+    /*deixar lado a lado*/
     align-items: center;
     justify-content: center;
-    gap: 10px;    /*deixar lado a lado*/
+    gap: 10px; 
     font-size: 30px;
     transition: font-size 0.3s ease;
+    margin-top: 50px;
 }
 
 .card{
