@@ -2,11 +2,52 @@
 
 body{
     font-family: "Quicksand"; 
-    /*fonte do menu, da lista e do rodapé*/
-    font-size: 20px;
-    /*tamanho do menu, da lista e do rodapé*/
+    /*fonte a lista e do rodapé*/
+    font-size: 25px;
+    /*tamanho da lista e do rodapé*/
     background: linear-gradient(rgb(27, 1, 67),rgb(17, 1, 28));
     /*cor do fundo*/
+}
+
+.menu-conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;    /*deixar lado a lado*/
+    font-size: 30px;
+    transition: font-size 0.3s ease;
+}
+
+.card{
+    width: 500px;
+    border-radius: 20px;
+    /*arredondamento das bordas*/
+    align-items: center;
+    margin-left: 10px;
+    /*margem a esquerda*/
+    height: 80px;
+    /*tamanho*/
+    background-color: #fff;
+    /*cor*/
+    transition: .3s all ease;
+    /*tempo para ele se abrir*/
+    text-align: center;
+    font-size: 25px;
+    color: rgb(40, 0, 60);
+    /*cor das bordas brilhantes*/
+    box-shadow: -4px -4px 15px, -4px -4px 15px lightgrey;
+    /*direção das bordas e brilho das bordas*/
+    font-family: "Nunito, "sans-serif;
+    /*fonte das palavras do texto*/
+    max-width: 257px;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.espaco{
+    text-decoration: none;
 }
 
 h1{
@@ -55,21 +96,14 @@ p{
     /*paragrafos justificados*/
  }
 
-header{
-    display: flex;
-    /*para deixar os itens lado a lado*/
-    gap: 50px;
-    /*espaçamento dos itens do menu*/
- }
-
 a:link{
     color:rgb(177, 168, 198);
-    /*cor do menu e da lista*/
+    /*cor da lista*/
 }
 
 a:visited {
     color:rgb(27, 0, 89);
-    /*cor do menu e da lista depois d visitado*/
+    /*cor da lista depois d visitado*/
 }
 
 .conteudo-padrao{
@@ -100,7 +134,7 @@ a:visited {
     /*espaçamento entre as frases*/
     justify-content: center;
     /*centralizando*/
-    margin-top: 50px;
+    margin-top: 10px;
     /*margem de cima*/
  }
 
@@ -159,6 +193,8 @@ footer .last-detail a /* Estilo para os links dentro da gaveta */ {
     /*imagem e texto lado a lado*/
     gap: 50px;
     /*espaçamentoentre a imagem e o texto*/
+    margin-top: -10px;
+
 }
 
 #fundo{
